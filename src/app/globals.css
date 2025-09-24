@@ -5,6 +5,7 @@ All colors MUST be HSL.
 */
 
 :root {
+  /* Fire Department Light Theme - for reference only, defaulting to dark */
   --background: 0 0% 100%;
   --foreground: 222.2 84% 4.9%;
 
@@ -14,7 +15,7 @@ All colors MUST be HSL.
   --popover: 0 0% 100%;
   --popover-foreground: 222.2 84% 4.9%;
 
-  --primary: 222.2 47.4% 11.2%;
+  --primary: 4 84% 58%;
   --primary-foreground: 210 40% 98%;
 
   --secondary: 210 40% 96.1%;
@@ -35,6 +36,18 @@ All colors MUST be HSL.
 
   --radius: 0.5rem;
 
+  /* Fire Department specific colors */
+  --fire-red: 4 84% 58%;
+  --fire-orange: 16 95% 55%;
+  --fire-yellow: 45 96% 53%;
+  --emergency-red: 0 91% 71%;
+  --warning-orange: 24 95% 53%;
+  --alert-yellow: 48 96% 53%;
+  --status-green: 122 39% 49%;
+  --navy-dark: 215 28% 17%;
+  --navy-darker: 215 32% 12%;
+  --navy-darkest: 215 39% 8%;
+
   --sidebar-background: 0 0% 98%;
   --sidebar-foreground: 240 5.3% 26.1%;
   --sidebar-primary: 240 5.9% 10%;
@@ -46,41 +59,42 @@ All colors MUST be HSL.
 }
 
 .dark {
-  --background: 222.2 84% 4.9%;
+  /* Fire Department Dark Theme - Main Theme */
+  --background: 215 39% 8%;
   --foreground: 210 40% 98%;
 
-  --card: 222.2 84% 4.9%;
+  --card: 215 32% 12%;
   --card-foreground: 210 40% 98%;
 
-  --popover: 222.2 84% 4.9%;
+  --popover: 215 32% 12%;
   --popover-foreground: 210 40% 98%;
 
-  --primary: 210 40% 98%;
-  --primary-foreground: 222.2 47.4% 11.2%;
+  --primary: 4 84% 58%;
+  --primary-foreground: 210 40% 98%;
 
-  --secondary: 217.2 32.6% 17.5%;
+  --secondary: 215 28% 17%;
   --secondary-foreground: 210 40% 98%;
 
-  --muted: 217.2 32.6% 17.5%;
+  --muted: 215 28% 17%;
   --muted-foreground: 215 20.2% 65.1%;
 
-  --accent: 217.2 32.6% 17.5%;
-  --accent-foreground: 210 40% 98%;
+  --accent: 16 95% 55%;
+  --accent-foreground: 215 39% 8%;
 
-  --destructive: 0 62.8% 30.6%;
+  --destructive: 0 91% 71%;
   --destructive-foreground: 210 40% 98%;
 
-  --border: 217.2 32.6% 17.5%;
-  --input: 217.2 32.6% 17.5%;
-  --ring: 212.7 26.8% 83.9%;
-  --sidebar-background: 240 5.9% 10%;
-  --sidebar-foreground: 240 4.8% 95.9%;
-  --sidebar-primary: 224.3 76.3% 48%;
-  --sidebar-primary-foreground: 0 0% 100%;
-  --sidebar-accent: 240 3.7% 15.9%;
-  --sidebar-accent-foreground: 240 4.8% 95.9%;
-  --sidebar-border: 240 3.7% 15.9%;
-  --sidebar-ring: 217.2 91.2% 59.8%;
+  --border: 215 28% 17%;
+  --input: 215 28% 17%;
+  --ring: 4 84% 58%;
+  --sidebar-background: 215 39% 8%;
+  --sidebar-foreground: 210 40% 98%;
+  --sidebar-primary: 4 84% 58%;
+  --sidebar-primary-foreground: 210 40% 98%;
+  --sidebar-accent: 215 28% 17%;
+  --sidebar-accent-foreground: 210 40% 98%;
+  --sidebar-border: 215 28% 17%;
+  --sidebar-ring: 4 84% 58%;
 }
 
 @theme {
@@ -124,7 +138,19 @@ All colors MUST be HSL.
   --color-sidebar-accent-foreground: hsl(var(--sidebar-accent-foreground));
   --color-sidebar-border: hsl(var(--sidebar-border));
   --color-sidebar-ring: hsl(var(--sidebar-ring));
-  
+
+  /* Fire Department Colors */
+  --color-fire-red: hsl(var(--fire-red));
+  --color-fire-orange: hsl(var(--fire-orange));
+  --color-fire-yellow: hsl(var(--fire-yellow));
+  --color-emergency-red: hsl(var(--emergency-red));
+  --color-warning-orange: hsl(var(--warning-orange));
+  --color-alert-yellow: hsl(var(--alert-yellow));
+  --color-status-green: hsl(var(--status-green));
+  --color-navy-dark: hsl(var(--navy-dark));
+  --color-navy-darker: hsl(var(--navy-darker));
+  --color-navy-darkest: hsl(var(--navy-darkest));
+
   /* Border Radius */
   --radius-lg: var(--radius);
   --radius-md: calc(var(--radius) - 2px);
